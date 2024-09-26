@@ -17,3 +17,5 @@ TEMP
 weight.json
 ffmpeg*
 ffprobe*
+._vr.py
+._webui.py
