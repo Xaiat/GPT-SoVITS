@@ -19,3 +19,6 @@ ffmpeg*
 ffprobe*
 ._vr.py
 ._webui.py
+.webui.py.swp
+nltk_data
+._nltk_datawget-log
