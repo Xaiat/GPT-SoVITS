@@ -987,10 +987,10 @@ with gr.Blocks(title="GPT-SoVITS WebUI") as app:
                     with gr.Column():
                         with gr.Row():
                             batch_size = gr.Slider(minimum=1,maximum=40,step=1,label=i18n("每张显卡的batch_size"),value=default_batch_size,interactive=True)
-                            total_epoch = gr.Slider(minimum=1,maximum=25,step=1,label=i18n("总训练轮数total_epoch，不建议太高"),value=8,interactive=True)
+                            total_epoch = gr.Slider(minimum=1,maximum=1000,step=1,label=i18n("总训练轮数total_epoch，不建议太高"),value=25,interactive=True)
                         with gr.Row():
                             text_low_lr_rate = gr.Slider(minimum=0.2,maximum=0.6,step=0.05,label=i18n("文本模块学习率权重"),value=0.4,interactive=True)
-                            save_every_epoch = gr.Slider(minimum=1,maximum=25,step=1,label=i18n("保存频率save_every_epoch"),value=4,interactive=True)
+                            save_every_epoch = gr.Slider(minimum=1,maximum=1000,step=1,label=i18n("保存频率save_every_epoch"),value=5,interactive=True)
                     with gr.Column():     
                         with gr.Column():                   
                             if_save_latest = gr.Checkbox(label=i18n("是否仅保存最新的ckpt文件以节省硬盘空间"), value=True, interactive=True, show_label=True)
