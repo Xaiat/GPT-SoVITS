@@ -21,4 +21,5 @@ ffprobe*
 ._webui.py
 .webui.py.swp
 nltk_data
-._nltk_datawget-log
+._nltk_data
+wget-log
