@@ -1008,7 +1008,7 @@ with gr.Blocks(title="GPT-SoVITS WebUI") as app:
                     with gr.Column():
                         with gr.Row():
                             batch_size1Bb = gr.Slider(minimum=1,maximum=40,step=1,label=i18n("每张显卡的batch_size"),value=default_batch_size,interactive=True)
-                            total_epoch1Bb = gr.Slider(minimum=2,maximum=1000,step=1,label=i18n("总训练轮数total_epoch"),value=50,interactive=True)
+                            total_epoch1Bb = gr.Slider(minimum=2,maximum=50,step=1,label=i18n("总训练轮数total_epoch"),value=15,interactive=True)
                         with gr.Row():
                             save_every_epoch1Bb = gr.Slider(minimum=1,maximum=50,step=1,label=i18n("保存频率save_every_epoch"),value=5,interactive=True) 
                             if_dpo = gr.Checkbox(label=i18n("是否开启dpo训练选项(实验性)"), value=False, interactive=True, show_label=True)   
